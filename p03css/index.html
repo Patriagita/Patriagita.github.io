@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabel CSS</title>
+    <style>
+      body{
+            text-align: center;
+        }
+        table{
+            margin: 0px 0px 0px 10%;
+            width: 30%;
+            border: 1px solid black;
+        }
+        th{
+            background-color: rgb(50%, 10%, 11%);
+            color: white;
+            height: 50px;
+        }
+        td{
+            color: black;
+        }
+        td:hover{
+            background-color:gray;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .btn3{
+            background-color: orange;
+            margin: 25px 0px 0px 50%;
+            height: 50px;
+            width: 200px;
+        }
+        .btn3:hover{
+            background-color: darkorange;
+        }
+        .btn1{
+            height: 30px;
+            width: 100%;
+            background-color: skyblue;
+        }
+        .btn1:hover{
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        .btn2{
+            background-color: pink;
+            height: 30px;
+            width: 100%;
+        }
+        .btn2:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>5 teman Terbaik</h1>
+    <h2>By : PATRIA GITA LAKSAMANA</h2>
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th width="30">No</th>
+                    <th>Nama</th>
+                    <th>Asal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nia</td>
+                    <td>Cirebon</td>
+                    <td><button class="hapus">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rika</td>
+                    <td>Cirebon</td>
+                    <td><button class="hapus">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Salsabilla</td>
+                    <td>Cirebon</td>
+                    <td><button class="hapus">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Shazifa</td>
+                    <td>Cirebon</td>
+                    <td><button class="hapus">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Santi</td>
+                    <td>Cirebon</td>
+                    <td><button class="hapus">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button class="kembali" onclick="history.go(-1)">Kembali</button>
+    </div>
+</body>
+</html>
