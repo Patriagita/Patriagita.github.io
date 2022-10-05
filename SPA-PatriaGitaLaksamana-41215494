@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Single Page Application using JavaScript</title>
+	</head>	
+	<script>
+	var pages = {
+		'home' : `PATRIA GITA LAKSAMANA 41215494 . This is our home page!<br/><br/><img src='GITA.jpeg' style='width:300px;'/>`,
+		'aboutus' : `PATRIA GITA LAKSAMANA is the daugghter of a mother named FARAH DHIBA 	<br/><br/><img src='GITA.jpeg' style='width:600px;' />`,
+		'services' : `service someone who is sad <br/><br/><img src='GITA.jpeg' style='width:200px;' />`,
+		'contact' : `number whatsapp 085691148725<br/><br/><img src='GITA.jpeg' style='width:400px;' />`
+	};
+
+	function getPageContent(page){
+		var contentToReturn;
+		switch(page){
+			case 'home':
+				contentToReturn = pages.home;
+				break;
+			case 'aboutus':
+				contentToReturn = pages.aboutus;
+				break;
+			case 'services':
+				contentToReturn = pages.services;
+				break;
+			case 'contact':
+				contentToReturn = pages.contact;
+				break;
+			default:
+				contentToReturn = pages.home;
+				break;				
+		}
+		document.getElementById('content').innerHTML = contentToReturn; 
+	}
+	</script>
+<body onload="getPageContent('home')">
+
+	<div style="width:10%; float: left;background: #eee;height: 100%;">
+		<ul>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('home')">
+					Home
+				</a>
+			</li>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('aboutus')">
+					About Us
+				</a>
+			</li>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('services')">
+					Services
+				</a>
+			</li>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('contact')">
+					Contact
+				</a>
+			</li>
+		</ul>
+
+	</div>
+<div style="width: 90%;float: right; background: #999;color:#fff; height: 100%;font-size: 50px;"><p style="margin-left: 50px;" id="content"><p></div>
+</body>
+
+</html>
